@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jumlah Dua Bilangan</title>
+    <script>
+        function jumlah() {
+            let angka_1 = document.getElementById("angka1").value;
+            let angka_2 = document.getElementById("angka2").value;
+            console.log(parseInt(angka_1) + parseInt(angka_2));
+            let area_hasil = document.getElementById("hasiljumlah");
+            area_hasil.innerHTML = parseInt(angka_1) + parseInt(angka_2);
+        }
+    </script>
+</head>
+<body>
+    <fieldset>
+        <hr>
+        <h1>Menghitung Jumlah Dua Bilangan</h1>
+        Masukan Angka : 
+        
+            <input type="number" value="" id="angka1"> +
+            <input type="number" value="" id="angka2">
+            <button onclick="jumlah()">Jumlahkan</button>
+        
+        <br>
+        <h2>Hasil :</h2>
+        <span id="hasiljumlah"></span>
+        <br>
+        <hr>
+    </fieldset>  
+</body>
+</html>
